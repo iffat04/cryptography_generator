@@ -34,7 +34,14 @@ decode_btn.addEventListener('click',()=>{
     output_container.style.display='block'
     }
 })
+//clear input
 input_text_field.addEventListener('focus',()=>{
   input_text_field.value="";
   output_container.style.display='none';
 })
+
+//clear all 
+document.getElementById('refresh').addEventListener('click',()=>{
+  input_text_field.value="";
+  output_container.style.display='none';
+  })

@@ -23,6 +23,10 @@ function encode(text){
       encodedstr = window.btoa(encodedstr);
       return encodedstr;
 }
+
+function displayNone(element){
+  element.style.display = 'none';
+}
 //..........//
 const encode_btn = document.getElementById('encode-button');
 const input_text_field = document.getElementById('input-text-encode');
@@ -42,8 +46,8 @@ encode_btn.addEventListener('click',()=>{
 
 input_text_field.addEventListener('focus',()=>{
   copy_text_btn.innerText='Copy Encoded Message';
-  output_container.style.display='none';
-  copy_text_btn.style.display='none';
+  displayNone(output_container);
+  displayNone(copy_text_btn);
   input_text_field.value ='';
 
 })
@@ -57,3 +61,11 @@ copy_text_btn.addEventListener('click',()=>{
   //alert("Copied the text: " + copied_text);
 })
 
+//refresh all
+
+document.getElementById('refresh').addEventListener('click',()=>{
+input_text_field.value="";
+displayNone(output_container);
+displayNone(copy_text_btn);
+
+})

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-full bg-slate-300  ">
+    <header class="flex items-center justify-center mt-8 ">
+      <h1 class="text-xl text-slate-500 font-medium font-sans leading-loose decoration-white underline underline-offset-8 tracking-wider antialiased ">Cryptography</h1>
+
+    </header>
+    <main>
+        <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 ">
+            
+
+          <div class="max-w-lg w-full space-y-8 bg-slate-300  custom_shadow">
+              <!--menu option-->
+              <ul class="flex items-center text-xl">    
+                <a class="w-1/2 bg-white-100 p-2  shadow z-20 hover:bg-blue-100  text-center" href="index.html"><li class="w-full">Encode</li>
+                </a>
+                <a class="w-1/2 bg-blue-200 p-2  shadow-lg z-20 hover:bg-slate-100  text-center" href="decode.html"><li class="w-full">Decode</li>
+                </a>
+             </ul>
+
+             <!--logo-->
+              <div>
+                <img class="mx-auto h-12 w-auto" src="bcrypt.svg" alt="Workflow">
+                <h2 class="mt-6 text-center text-2xl font-bold text-gray-600">Input Text for Decode</h2>                
+              </div>
+
+              <!--input and button-->
+              <div class="flex items-center justify-center">
+                <input id="input-text-decode" class="bg-slate-200 p-2 shadow-white-100 hover:border-l-0 border-blue-200 focus:outline-none focus:border-sky-400 focus:ring-sky-500 focus:ring-1  "  type="text" placeholder="input text">
+                <button id="decode-button" class="p-2 text-blue-400 border border-l-0 border-white-100 tracking-wide hover:shadow-xl   hover:font-bold"> Decode</button>
+              </div>
+
+              
+              <!--show output-->
+              <div class="flex items-center justify-center py-5">
+                <h1 class="text-center rounded shadow-xl shadow-slate-500/40 bg-blue-200 p-5 hidden min-w-[50%]" id="decoded-text-container"></h1>
+              </div>
+
+
+          </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+    <script src="decode.js"></script>
+</body>
+</html>

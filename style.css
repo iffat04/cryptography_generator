@@ -1,0 +1,8 @@
+
+.custom_shadow{
+    box-shadow: 0 0 10px 6px #ffffff;
+}
+.custom_shadow ::after{
+    box-shadow: 4px 5px 10px 6px #181717;
+}
+   
